@@ -5,7 +5,7 @@ lvextend --resize -l +100%FREE /dev/mapper/pve-root
 
 # remove repo /etc/apt/sources.list.d/pve-enterprise.list
 sed -i 's/^/#/' /etc/apt/sources.list.d/pve-enterprise.list
-
+sed -i 's/^/#/' /etc/apt/sources.list.d/ceph.list
 # Add repo /etc/apt/sources.list
 cat <<EOL >> /etc/apt/sources.list
 deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
